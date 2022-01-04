@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { DarkTheme } from '../components/Themes';
 import {
   Facebook,
   Github,
@@ -28,10 +29,11 @@ const Icons = styled.div`
 const Line = styled.span`
   width: 2px;
   height: 8rem;
-  background-color: ${(props) => props.theme.text};
+  background-color: ${(props) =>
+    props.color === 'dark' ? DarkTheme.text : DarkTheme.body};
 `;
 
-export default function SocialIcons() {
+export default function SocialIcons(props) {
   return (
     <Icons>
       <div className="">
@@ -40,7 +42,11 @@ export default function SocialIcons() {
           style={{ color: 'inherit' }}
           target="_blank"
         >
-          <Github width={25} height={25} fill="currentColor" />
+          <Github
+            width={25}
+            height={25}
+            fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
+          />
         </Link>
       </div>
       <div className="">
@@ -49,7 +55,11 @@ export default function SocialIcons() {
           style={{ color: 'inherit' }}
           target="_blank"
         >
-          <Twitter width={25} height={25} fill="currentColor" />
+          <Twitter
+            width={25}
+            height={25}
+            fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
+          />
         </Link>
       </div>
       <div className="">
@@ -58,7 +68,11 @@ export default function SocialIcons() {
           style={{ color: 'inherit' }}
           target="_blank"
         >
-          <Facebook width={25} height={25} fill="currentColor" />
+          <Facebook
+            width={25}
+            height={25}
+            fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
+          />
         </Link>
       </div>
       <div className="">
@@ -67,7 +81,11 @@ export default function SocialIcons() {
           style={{ color: 'inherit' }}
           target="_blank"
         >
-          <Instagram width={25} height={25} fill="currentColor" />
+          <Instagram
+            width={25}
+            height={25}
+            fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
+          />
         </Link>
       </div>
       <div className="">
@@ -76,10 +94,14 @@ export default function SocialIcons() {
           style={{ color: 'inherit' }}
           target="_blank"
         >
-          <YouTube width={25} height={25} fill="currentColor" />
+          <YouTube
+            width={25}
+            height={25}
+            fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
+          />
         </Link>
       </div>
-      <Line />
+      <Line color={props.theme} />
     </Icons>
   );
 }
