@@ -19,8 +19,9 @@ const MainContainer = styled.div`
 
 const Container = styled.div`
   background-color: ${(props) => `rgba(${props.theme.bodyRgba}, 0.8)`};
-  height: 100vh;
+  height: auto;
   width: 100%;
+
   position: relative;
   padding-bottom: 5rem;
 `;
