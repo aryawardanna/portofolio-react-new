@@ -164,7 +164,7 @@ export default function Main() {
             Say hi ...
           </motion.h2>
         </Contact>
-        <Blog to="/blog">
+        <Blog to="/blog" click={+click}>
           <motion.h2
             whileHover={{
               scale: 1.2,
