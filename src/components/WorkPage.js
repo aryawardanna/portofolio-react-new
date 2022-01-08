@@ -4,6 +4,7 @@ import { DarkTheme } from './Themes';
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
+import { motion } from 'framer-motion';
 
 import { Work } from '../data/WorkData';
 import Card from '../subComponents/Card';
@@ -17,7 +18,7 @@ const Box = styled.div`
   overflow: hidden;
 `;
 
-const Main = styled.ul`
+const Main = styled(motion.ul)`
   position: fixed;
   top: 12rem;
   left: calc(10rem + 15vw);
@@ -36,6 +37,8 @@ const Rotate = styled.span`
   height: 80px;
   z-index: 1;
 `;
+
+// framer-motion configuration
 
 export default function WorkPage() {
   const ref = useRef(null);
