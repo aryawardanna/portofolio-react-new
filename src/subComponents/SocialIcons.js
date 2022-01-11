@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styled from 'styled-components';
 import { DarkTheme } from '../components/Themes';
@@ -93,7 +94,7 @@ export default function SocialIcons(props) {
       </div>
       <div className="">
         <a
-          href="#"
+          href={'#'}
           style={{ color: 'inherit' }}
           target="_blank"
           rel="noreferrer noopener"
