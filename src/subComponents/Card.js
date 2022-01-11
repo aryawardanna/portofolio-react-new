@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { Github } from '../components/AllSvgs';
 
 const Box = styled.li`
@@ -55,7 +54,7 @@ const Footer = styled.footer`
   justify-content: space-between;
 `;
 
-const Linkin = styled(Link)`
+const Linkin = styled.a`
   background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
   text-decoration: none;
@@ -69,7 +68,7 @@ const Linkin = styled(Link)`
   }
 `;
 
-const Git = styled(Link)`
+const Git = styled.a`
   color: inherit;
   text-decoration: none;
 
@@ -93,19 +92,11 @@ export default function Card(props) {
         })}
       </Tags>
       <Footer>
-        <Linkin
-          to={{ pathname: `${demo}` }}
-          target="_blank"
-          rel="noreferrer noopener"
-        >
+        <Linkin href={`${demo}`} target="_blank" rel="noreferrer noopener">
           Visit
         </Linkin>
 
-        <Git
-          to={{ pathname: `${github}` }}
-          target="_blank"
-          rel="noreferrer noopener"
-        >
+        <Git href={`${github}`} target="_blank" rel="noreferrer noopener">
           <Github width={30} height={30} />
         </Git>
       </Footer>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { DarkTheme } from '../components/Themes';
 import {
@@ -28,7 +27,7 @@ const Icons = styled.div`
 
 const Line = styled.span`
   width: 2px;
-  height: 8rem;
+  height: 3rem;
   background-color: ${(props) =>
     props.color === 'dark' ? DarkTheme.text : DarkTheme.body};
 `;
@@ -37,8 +36,8 @@ export default function SocialIcons(props) {
   return (
     <Icons>
       <div className="">
-        <Link
-          to={{ pathname: 'https://github.com/aryawardanna' }}
+        <a
+          href="https://github.com/aryawardanna"
           style={{ color: 'inherit' }}
           target="_blank"
           rel="noreferrer noopener"
@@ -48,11 +47,11 @@ export default function SocialIcons(props) {
             height={25}
             fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
           />
-        </Link>
+        </a>
       </div>
       <div className="">
-        <Link
-          to={{ pathname: 'https://twitter.com/aryawardanna1' }}
+        <a
+          href="https://twitter.com/aryawardanna1"
           style={{ color: 'inherit' }}
           target="_blank"
           rel="noreferrer noopener"
@@ -62,11 +61,11 @@ export default function SocialIcons(props) {
             height={25}
             fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
           />
-        </Link>
+        </a>
       </div>
       <div className="">
-        <Link
-          to={{ pathname: 'https://www.facebook.com/aryawardanna/' }}
+        <a
+          href="https://www.facebook.com/aryawardanna/"
           style={{ color: 'inherit' }}
           target="_blank"
           rel="noreferrer noopener"
@@ -76,11 +75,11 @@ export default function SocialIcons(props) {
             height={25}
             fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
           />
-        </Link>
+        </a>
       </div>
       <div className="">
-        <Link
-          to={{ pathname: 'https://www.instagram.com/aryawardanna/' }}
+        <a
+          href="https://www.instagram.com/aryawardanna/"
           style={{ color: 'inherit' }}
           target="_blank"
           rel="noreferrer noopener"
@@ -90,11 +89,11 @@ export default function SocialIcons(props) {
             height={25}
             fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
           />
-        </Link>
+        </a>
       </div>
       <div className="">
-        <Link
-          to={{ pathname: '#' }}
+        <a
+          href="#"
           style={{ color: 'inherit' }}
           target="_blank"
           rel="noreferrer noopener"
@@ -104,7 +103,7 @@ export default function SocialIcons(props) {
             height={25}
             fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
           />
-        </Link>
+        </a>
       </div>
       <Line color={props.theme} />
     </Icons>
