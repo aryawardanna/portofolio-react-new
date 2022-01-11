@@ -153,6 +153,7 @@ export default function Main() {
         </Center>
         <Contact
           target="_blank"
+          rel="noreferrer noopener"
           to={{ pathname: 'mailto:aryawardanaan3@gmail.com' }}
         >
           <motion.h2
@@ -164,7 +165,7 @@ export default function Main() {
             Say hi ...
           </motion.h2>
         </Contact>
-        <Blog to="/blog" click={+click}>
+        <Blog to="#" click={+click}>
           <motion.h2
             whileHover={{
               scale: 1.2,

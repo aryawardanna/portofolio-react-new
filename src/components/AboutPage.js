@@ -69,16 +69,15 @@ export default function AboutPage() {
           <img src={astronout} alt="spaceman" />
         </Spaceman>
         <Main>
-          I'm a front-end developer located in India. I love to create simple
-          yet beautiful websites with great user experience.
+          I'm a web developer based Karangasem Bali. I love to create simple yet
+          beautiful websites with great user experience.
           <br />
           <br />
-          I'm interested in the whole frontend stack Like trying new things and
+          I'm interested in the whole backend stack Like trying new things and
           building great projects. I'm an independent freelancer and blogger. I
           love to write blogs and read books.
           <br />
           <br />
-          I believe everything is an Art when you put your consciousness in it.
           You can connect with me via social links.
           <br />
           <br />

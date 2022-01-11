@@ -41,6 +41,7 @@ export default function SocialIcons(props) {
           to={{ pathname: 'https://github.com/aryawardanna' }}
           style={{ color: 'inherit' }}
           target="_blank"
+          rel="noreferrer noopener"
         >
           <Github
             width={25}
@@ -54,6 +55,7 @@ export default function SocialIcons(props) {
           to={{ pathname: 'https://twitter.com/aryawardanna1' }}
           style={{ color: 'inherit' }}
           target="_blank"
+          rel="noreferrer noopener"
         >
           <Twitter
             width={25}
@@ -67,6 +69,7 @@ export default function SocialIcons(props) {
           to={{ pathname: 'https://www.facebook.com/aryawardanna/' }}
           style={{ color: 'inherit' }}
           target="_blank"
+          rel="noreferrer noopener"
         >
           <Facebook
             width={25}
@@ -80,6 +83,7 @@ export default function SocialIcons(props) {
           to={{ pathname: 'https://www.instagram.com/aryawardanna/' }}
           style={{ color: 'inherit' }}
           target="_blank"
+          rel="noreferrer noopener"
         >
           <Instagram
             width={25}
@@ -93,6 +97,7 @@ export default function SocialIcons(props) {
           to={{ pathname: '#' }}
           style={{ color: 'inherit' }}
           target="_blank"
+          rel="noreferrer noopener"
         >
           <YouTube
             width={25}

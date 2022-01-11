@@ -93,11 +93,19 @@ export default function Card(props) {
         })}
       </Tags>
       <Footer>
-        <Linkin to={{ pathname: `${demo}` }} target="_blank">
+        <Linkin
+          to={{ pathname: `${demo}` }}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           Visit
         </Linkin>
 
-        <Git to={{ pathname: `${github}` }} target="_blank">
+        <Git
+          to={{ pathname: `${github}` }}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Github width={30} height={30} />
         </Git>
       </Footer>
