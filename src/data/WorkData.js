@@ -56,4 +56,13 @@ export const Work = [
     github:
       'https://github.com/aryawardanna/portfolio-using-reactJS-and-emailJS',
   },
+  {
+    id: 7,
+    name: 'API TOKO BUKU',
+    description: 'Api using expressJS sequelize and mySQL any more JWT',
+    tags: ['express', 'sequelize', 'MySQL'],
+
+    demo: 'https://api-toko-buku.herokuapp.com/',
+    github: 'https://github.com/aryawardanna/api-toko-buku',
+  },
 ];
