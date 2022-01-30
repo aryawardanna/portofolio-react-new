@@ -65,4 +65,14 @@ export const Work = [
     demo: 'https://api-toko-buku.herokuapp.com/',
     github: 'https://github.com/aryawardanna/api-toko-buku',
   },
+  {
+    id: 7,
+    name: 'URL Shortener',
+    description:
+      'The website shortens the url to make it easier to use and hopefully useful',
+    tags: ['express', 'mongodb', 'NoSql', 'Heroku'],
+
+    demo: 'https://urls-shorterner.herokuapp.com/',
+    github: 'https://github.com/aryawardanna/short-urls.git',
+  },
 ];
